@@ -1,0 +1,287 @@
+* {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+    background-color: #333333;
+    font-family: 'Courier Prime', monospace;
+}
+
+iframe {
+    position: absolute;
+    top: 90px;
+    border-radius:30px;
+}
+
+.card-box {
+    width: 815px;
+    height: auto;
+    background-color: #282828;
+    border-radius: 30px;
+    margin-top: 0;
+    position: absolute;
+    top: 30%;
+    left: 28%;   
+}
+
+.review-card-box {
+    width: 815px;
+    height: auto;
+    background-color: #282828;
+    border-radius: 30px;
+    margin-top: 0;
+    position: absolute;
+    top: 5%;
+}
+
+.buttons {
+    width: auto;
+    height: auto;
+    border: 5px;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.menu {
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+}
+
+.inputs {
+    width: 390px;
+    height: 60px;
+    background-color: #111111;
+    border-radius: 15px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    margin-left: 10px;
+}
+
+.radios {
+    display: flex;
+    align-items: baseline;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.radio-label {
+    color: #FFFFFF;
+    font-size: 30px;
+    margin-left: 5px;
+}
+
+.my-button {
+    width: 200px;
+    height: 65px;
+    border-radius: 15px;
+    background-color: #111111;
+    color: #FFFFFF;
+    position: relative;
+    margin-left: 307.5px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.checkbox {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.checkbox-label {
+    color: #ffffff; 
+    font-size: 20px; 
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    height: 400px;
+    width: 200px;
+    background-color:#111111;
+    position: relative;
+    margin-left: 5%;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.card-img {
+    height: 385px;
+    border-radius: 15px;
+    width: 185px;
+    margin-top: 8px;
+}
+
+.review-book {
+    color: #FFFFFF;
+    font-size: 25px; 
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+}
+
+.review-source {
+    font-size: 30px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ba6a23;
+
+}
+
+.line {
+    height: 4px; 
+    width: 95%; 
+    background-color: #ba6a23;    
+    position: relative;
+    margin-left: 17px;
+}
+
+.head {
+    position: relative; 
+    margin-left: 15px; 
+    margin-top: 20px; 
+    display: flex;
+}
+
+.cv-name {
+    font-size: 55px;
+    margin-top: 70px; 
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.cv-photo {
+    border-radius: 15px; 
+    height: 200px; 
+    width: 280px;
+    position: relative; 
+    margin-left: 35%; 
+    margin-right: 15px;
+}
+
+.job-contact {
+    font-size: 25px;
+    margin-left: 15px;
+    color: #ffffff;
+    font-weight: 100;
+    font-style: oblique;
+}
+
+.cv-links {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.cv-list {
+    color: #ffffff;
+    font-size: 20px;
+    margin-left: 30px;
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.list-inside-informations {
+    font-style: italic; 
+    margin-left: 15px;
+}
+
+.menu-list {
+    list-style: none;
+    display: flex;
+    height: 30px;
+}
+
+.menu-list-element {
+    margin-right: 100px;
+}
+
+.header {
+    font-size: 35px;
+    color: #ba6a23;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+.project-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+#home, #about, #contact, #song-of-the-day {
+    font-size: 45px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#next, #previous {
+    border-radius: 5px;
+    background-color: #333333;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+#last-name, #phone-number {
+    margin-right: 10px;
+}
+
+#message {
+    width: 785px;
+    height: 250px;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+#days {
+    width: 400px;
+    height: 50px;
+    margin-left: 25%;
+    margin-top: 15px;
+    position: relative;
+    border-radius: 15px;
+    right: 200px;
+    background-color: #111111;
+    color: #ffffff;
+}
+
+#generate {
+    margin-left: 15px;
+    border-radius: 15px;
+    left: 50px; 
+    position: relative;
+    width: 150px;
+    height: 50px;
+    top: 10px;
+    background-color: #111111;
+    color: #FFFFFF;
+}
+
+#home:hover, #about:hover, #contact:hover, #song-of-the-day:hover, #next:hover, #previous:hover, 
+.review-source:hover, .cv-links:hover, .project-link:hover {
+    color: #ba6923b6;
+    transition: 500ms;
+}
+
+.my-button:hover, .card:hover, #generate:hover,#days:hover {
+    background-color: #ba6923b6;
+    transition: 500ms;
+    cursor: pointer;
+}

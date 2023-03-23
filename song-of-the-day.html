@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song of the Day</title>
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+
+        function generateMusic() {
+            var value = $("#days option:selected").val()
+
+            songsHidden()
+
+            switch(value) {
+                case "monday":
+                    $("#monday").css("visibility","visible")
+                    break;
+                case "tuesday":
+                    $("#tuesday").css("visibility","visible")
+                    break;
+                case "wednesday":
+                    $("#wednesday").css("visibility","visible")
+                    break;
+                case "thursday":
+                    $("#thursday").css("visibility","visible")
+                    break;
+                case "friday":
+                    $("#friday").css("visibility","visible")
+                    break;
+                case "saturday":
+                    $("#saturday").css("visibility","visible")
+                    break;
+                case "sunday":
+                    $("#sunday").css("visibility","visible")
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        function songsHidden() {
+            $("iframe").css("visibility","hidden")
+        }
+
+        $(document).ready(function() {
+            songsHidden()
+            $( "#generate" ).click(generateMusic)
+    })
+
+
+    </script>
+</head>
+<body>
+
+    <span class="menu">
+
+        <ul class="menu-list">
+            <li class="menu-list-element">
+                <a href="index.html" id="home">Homepage</a>
+            </li>
+
+            <li class="menu-list-element">
+                <a href="about.html" id="about">About me</a>
+            </li>
+
+            <li class="menu-list-element">
+                <a href="contact.html" id="contact">Contact</a>
+            </li>
+
+            <li class="menu-list-element">
+                <a href="song-of-the-day.html" id = "song-of-the-day" style="color:#ba6a23">Song of the Day</a>
+            </li>
+
+        </ul>
+
+    </span>
+
+
+    <div class = "card-box" style="background-color: initial; 
+    display: flex; 
+    flex-direction: column;">
+
+        <div style="display: flex;">
+            <select name="days" id="days" style="cursor: pointer;">
+                <option value="monday">
+                    Monday
+                </option>
+                <option value="tuesday">
+                    Tuesday
+                </option>
+                <option value="wednesday">
+                    Wednesday
+                </option>
+                <option value="thursday">
+                    Thursday
+                </option>
+                <option value="friday">
+                    Friday
+                </option>
+                <option value="saturday">
+                    Saturday
+                </option>
+                <option value="sunday">
+                    Sunday
+                </option>
+            </select>
+
+            <button id="generate">Generate Music</button>
+        </div>
+
+        <iframe id="monday" src="https://open.spotify.com/embed/track/747LeNCUC3bF2h43E73rFh?utm_source=generator" 
+        width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+
+        <iframe id="tuesday" src="https://open.spotify.com/embed/track/5GxUKIEkMXXZo1Tif0IzfC?utm_source=generator" 
+        width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+
+        <iframe id="wednesday" src="https://open.spotify.com/embed/track/6QNCvcs758QuBEBISL6XIV?utm_source=generator" 
+        width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+
+        <iframe id="thursday" src="https://open.spotify.com/embed/track/5LYMamLv12UPbemOaTPyeV?utm_source=generator" 
+        width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+
+        <iframe id="friday" src="https://open.spotify.com/embed/track/34pGOW56yrlEhRv5YFlNlU?utm_source=generator&theme=0" 
+        width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+
+        <iframe id="saturday" src="https://open.spotify.com/embed/track/1r9xUipOqoNwggBpENDsvJ?utm_source=generator" 
+        width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+
+        <iframe id="sunday" src="https://open.spotify.com/embed/track/3v4AloMT3mUth2dtZafUJH?utm_source=generator" 
+        width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture">
+        </iframe>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+    <script>
+
+        function checkedCheckbox() {
+            let isChecked = $("#checkbox").is(":checked")
+
+            if (isChecked === true) {
+                $("#checkbox").prop("checked",false)    
+            } else {
+                $("#checkbox").prop("checked",true)
+            }
+        } 
+
+        function checkedRadio() { // Here is not working competely truely
+            let isChecked = $("#radio1").is(":checked")
+
+            if (isChecked) {
+                $("#radio2").prop("checked",true)
+                $("#radio1").prop("checked",false)
+
+                $("#message").prop("disabled",true)
+            }else{
+                $("#radio2").prop("checked",false)
+                $("#radio1").prop("checked",true)
+
+                $("#message").prop("disabled",false)
+            }
+        }
+
+        $("document").ready(function () {
+            $(".checkbox-label").click(checkedCheckbox)
+            $(".radio-label").click(checkedRadio)
+            $("#radio1").click(checkedRadio) // Here is not working competely truely
+            $("#radio2").click(checkedRadio)
+        })
+    </script>
+</head>
+<body>
+    
+    <span class="menu">
+
+        <ul class="menu-list">
+            <li class="menu-list-element">
+                <a href="index.html" id="home">Homepage</a>
+            </li>
+
+            <li class="menu-list-element">
+                <a href="about.html" id="about">About me</a>
+            </li>
+
+            <li class="menu-list-element">
+                <a href="contact.html" id="contact" style="color:#ba6a23">Contact</a>
+            </li>
+
+            <li class="menu-list-element">
+                <a href="song-of-the-day.html" id = "song-of-the-day">Song of the Day</a>
+            </li>
+
+        </ul>
+
+    </span>
+
+    <div class = "card-box" style="display: flex; flex-wrap: wrap; border-radius: 15px;">
+
+        <form class="radios">
+            <input type="radio" name="Leave message" id="radio1" style="margin-left: 15px; cursor: pointer;" checked>
+            <label class="radio-label" style="cursor: pointer">Leave message</label>
+            <input type="radio" name="We contact you" id="radio2" style="margin-left: 260px; cursor: pointer">
+            <label class="radio-label" style="cursor: pointer">We contact you</label>
+        </form>
+
+        <input type="text" class="inputs" placeholder="First Name">
+        <input type="text" class="inputs" placeholder="Last Name" id="last-name">
+        <input type="text" class="inputs" placeholder="Email">
+        <input type="text" class="inputs" placeholder="Phone Number" id="phone-number">
+        <input type="text" class="inputs" placeholder="Message" id="message">
+
+        <span class="checkbox">
+            <input type="checkbox" id="checkbox" style="margin-left: 15px; margin-right: 10px; cursor: pointer;">
+            <label for="allow" class="checkbox-label">
+                Your informations will send to us. Do you confirm this?
+            </label>
+        </span>
+
+        <button type="button" class="my-button" onclick="window.alert('Your informations sent to us.')">
+            Submit
+        </button>
+   
+
+    </div>
+
+
+
+</body>
+</html>
